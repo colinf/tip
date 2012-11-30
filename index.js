@@ -62,7 +62,7 @@ function Tip(content, options) {
  * Inherits from `Emitter.prototype`.
  */
 
-Tip.prototype.__proto__ = Emitter.prototype;
+Tip.prototype = new Emitter;
 
 /**
  * Attach to the given `el` with optional hide `delay`.
